@@ -6,7 +6,7 @@ from aiogram.filters import ChatMemberUpdatedFilter, IS_NOT_MEMBER, IS_MEMBER
 
 TOKEN = os.getenv("Token")
 
-bot = Bot(token=Token)
+bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 @dp.chat_member(ChatMemberUpdatedFilter(
