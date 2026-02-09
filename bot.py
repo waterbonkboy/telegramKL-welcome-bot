@@ -4,9 +4,9 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import ChatMemberUpdated
 from aiogram.filters import ChatMemberUpdatedFilter, IS_NOT_MEMBER, IS_MEMBER
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("Token")
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=Token)
 dp = Dispatcher()
 
 @dp.chat_member(ChatMemberUpdatedFilter(
