@@ -1,9 +1,10 @@
 import asyncio
+import os
 from aiogram import Bot, Dispatcher
 from aiogram.types import ChatMemberUpdated
 from aiogram.filters import ChatMemberUpdatedFilter, IS_NOT_MEMBER, IS_MEMBER
 
-TOKEN = "8549333159:AAEoGLv-mMtQ8sHS-r_0m_X7MIJDz3uivdQ"
+TOKEN = os.getenv("TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
